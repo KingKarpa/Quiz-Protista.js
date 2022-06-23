@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS-Reset/ResetCSS-style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Quiz Protista</title>
+</head>
+<body>
+    <main id="page-origin">
+        <fieldset>
+            <legend id="title-leg">Quiz Avaliativo</legend>
+        </fieldset>
+        <h2>3ªV2 - Reino Protista</h2>
+        <p>&nbsp;Este breve quiz possuí o objetivo de avaliar o aprendizado obtido durante a aula acerca do <strong>Reino Protista</strong>.</p>
+        <div id="guide">
+            <h3>&nbsp;Pontos Importantes:</h3>
+            <ul>
+                <li>O quiz terá 10 questões;</li>
+                <li>Para melhor gestão de tempo, o aluno terá <strong>50 segundos</strong> para responder cada questão;</li>
+                <li>Cada questão terá 4 alternativas, sendo apenas uma correta;</li>
+                <li><strong>Boa Sorte!</strong></li>
+            </ul>
+        </div>
+        <button id="start" name="start" onclick="startQuiz()">Iniciar Teste</button>
+    </main>
+    <section id="quiz-questions">
+        <article id="question-0">
+            <fieldset>
+                <legend>Quiz Protista - 1ª Qst</legend>
+            </fieldset>
+            <div id="timer-0" class="div-timer"></div>
+            <p>Os principais grupos presentes no Reino protista são:</p> 
+            <div class="options-square">
+                <button class="question-option" name="0-A"><strong>A)</strong> Moneras e Protozoários.</button>
+                <button class="question-option" name="0-B"><strong>B)</strong> Protozoários e Fungos.</button>
+                <button class="question-option" name="0-C"><strong>C)</strong> Protozoários e Algas.</button>
+                <button class="question-option" name="0-D"><strong>D)</strong> Fungos e Algas.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+        <article id="question-1">
+            <fieldset>
+                <legend>Quiz Protista - 2ª Qst</legend>
+            </fieldset>
+            <div id="timer-1" class="div-timer"></div>
+            <p>O Reino Protista, caracteriza-se por:</p> 
+            <div class="options-square">
+                <button class="question-option" name="1-A"><strong>A)</strong> Englobar varios organismos, como seres unicelulares, multicelulares, autotróficos e heterotróficos.</button>
+                <button class="question-option" name="1-B"><strong>B)</strong> Englobar apenas organismos autotróficos e multicelulares.</button>
+                <button class="question-option" name="1-C"><strong>C)</strong> Englobar apenas organismos heterotróficos e unicelulares.</button>
+                <button class="question-option" name="1-D"><strong>D)</strong> Englobar apenas organismos heterotróficos e multicelulares.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button> 
+            </div>
+        </article>
+        <article id="question-2">
+            <fieldset>
+                <legend>Quiz Protista - 3ª Qst</legend>
+            </fieldset>
+            <div id="timer-2" class="div-timer"></div>
+            <p>O barbeiro (inseto) é o transmissor de um parasita que causa uma doença no homem. Qual é essa doença?</p> 
+            <div class="options-square">
+                <button class="question-option" name="2-A"><strong>A)</strong> Úlcera de Bauru.</button>
+                <button class="question-option" name="2-B"><strong>B)</strong> Doença de Chagas.</button>
+                <button class="question-option" name="2-C"><strong>C)</strong> Doença do sono.</button>
+                <button class="question-option" name="2-D"><strong>D)</strong> Disenteria.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+        <article id="question-3">
+            <fieldset>
+                <legend>Quiz Protista - 4ª Qst</legend>
+            </fieldset>
+            <div id="timer-3" class="div-timer"></div>
+            <p>Assinale a opção que todas as doenças são causadas por protozoários.</p> 
+            <div class="options-square">
+                <button class="question-option" name="3-A"><strong>A)</strong> Malária, doença de Chagas, peste bubônica, amebíase.</button>
+                <button class="question-option" name="3-B"><strong>B)</strong> Malária, febre amarela, doença de Chagas e amebíase..</button>
+                <button class="question-option" name="3-C"><strong>C)</strong> Malária, doença de Chagas, leishmaniose, amebíase.</button>
+                <button class="question-option" name="3-D"><strong>D)</strong> Peste bubônica, doença de Chagas, febre amarela, amebíase.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+        <article id="question-4">
+            <fieldset>
+                <legend>Quiz Protista - 5ª Qst</legend>
+            </fieldset>
+            <div id="timer-4" class="div-timer"></div>
+            <p>Qual das altarnativas não é uma característica dos Protozoários?</p> 
+            <div class="options-square">
+                <button class="question-option" name="4-A"><strong>A)</strong> São seres eucariontes.</button>
+                <button class="question-option" name="4-B"><strong>B)</strong> São seres unicelulares.</button>
+                <button class="question-option" name="4-C"><strong>C)</strong> São seres heterotróficos.</button>
+                <button class="question-option" name="4-D"><strong>D)</strong> São seres clorofilados.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+        <article id="question-5">
+            <fieldset>
+                <legend>Quiz Protista - 6ª Qst</legend>
+            </fieldset>
+            <div id="timer-5" class="div-timer"></div>
+            <p>Os altos índices de malária nas regiões tropicais têm várias razões, entre elas:</p> 
+            <div class="options-square">
+                <button class="question-option" name="5-A"><strong>A)</strong> A temperatura elevada e altos índices de chuva favorecem a proliferação do mosquito transmissor.</button>
+                <button class="question-option" name="5-B"><strong>B)</strong> Os genótipos das populações locais facilitam sua transmissão.</button>
+                <button class="question-option" name="5-C"><strong>C)</strong> A falta de saneamento básico ajuda no desenvolvimento do mosquito transmissor.</button>
+                <button class="question-option" name="5-D"><strong>D)</strong> A falta de predadores capazes de eliminar o transmissor.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+        <article id="question-6">
+            <fieldset>
+                <legend>Quiz Protista - 7ª Qst</legend>
+            </fieldset>
+            <div id="timer-6" class="div-timer"></div>
+            <p>O filo Protozoa é subdividido em quatro classes: Sarcodínea, Mastigophora, Sporozoa e Ciliophora. A característica que faz tal classificação é:</p> 
+            <div class="options-square">
+                <button class="question-option" name="6-A"><strong>A)</strong> O modo de reprodução.</button>
+                <button class="question-option" name="6-B"><strong>B)</strong> A estrutura de locomoção.</button>
+                <button class="question-option" name="6-C"><strong>C)</strong> A composição química do pigmento fotossintetizante.</button>
+                <button class="question-option" name="6-D"><strong>D)</strong> A presença ou ausência de carioteca.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+        <article id="question-7">
+            <fieldset>
+                <legend>Quiz Protista - 8ª Qst</legend>
+            </fieldset>
+            <div id="timer-7" class="div-timer"></div>
+            <p>A prevenção da malária e da doença de Chagas envolve:</p> 
+            <div class="options-square">
+                <button class="question-option" name="7-A"><strong>A)</strong> Erradicação de mosquitos e barbeiros.</button>
+                <button class="question-option" name="7-B"><strong>B)</strong> Não comer carne de porco mal cozida e não habitar em casas de barro.</button>
+                <button class="question-option" name="7-C"><strong>C)</strong> Não banhar-se em lagoas e eliminar mosquitos.</button>
+                <button class="question-option" name="7-D"><strong>D)</strong> A erradicação de mosquitos e cães de rua.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+        <article id="question-8">
+            <fieldset>
+                <legend>Quiz Protista - 9ª Qst</legend>
+            </fieldset>
+            <div id="timer-8" class="div-timer"></div>
+            <p>Os protozoários locomovem-se graças a expansões citoplasmáticas chamadas de:</p> 
+            <div class="options-square">
+                <button class="question-option" name="8-A"><strong>A)</strong> Flagelos.</button>
+                <button class="question-option" name="8-B"><strong>B)</strong> Cílios.</button>
+                <button class="question-option" name="8-C"><strong>C)</strong> Pseudópodes.</button>
+                <button class="question-option" name="8-D"><strong>D)</strong> Tentáculos.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+        <article id="question-9">
+            <fieldset>
+                <legend>Quiz Protista - 10ª Qst</legend>
+            </fieldset>
+            <div id="timer-9" class="div-timer"></div>
+            <p>As algas sao seres:</p> 
+            <div class="options-square">
+                <button class="question-option" name="9-A"><strong>A)</strong> Eucariontes.</button>
+                <button class="question-option" name="9-B"><strong>B)</strong> Fotossitetizantes.</button>
+                <button class="question-option" name="9-C"><strong>C)</strong> Unicelulares.</button>
+                <button class="question-option" name="9-D"><strong>D)</strong> Todas as afirmaçoes estao corretas.</button>
+                    <button class="check-btn" name="check" onclick="checkAnswer()"><strong>Confirmar</strong></button>
+            </div>
+        </article>
+    </section>
+    <section id="gameOver">
+        <fieldset id="gO-title">
+            <legend><strong>Game Over</strong></legend>
+        </fieldset>
+        <p id="score"></p>
+        <p>Agradecemos sua participação!</p>
+        <footer>
+            <fieldset>
+                <legend>Membros do Grupo</legend>
+                <ul>
+                    <li>Nícolas Oliveira</li>
+                    <li>Mateus Belenda</li>
+                    <li>Jonas Augusto</li>
+                    <li>Luiz Fernando</li>
+                    <li>Maria Fernanda</li>
+                    <li>Paloma Gonçalves</li>
+                    <li>Gabriel Lattaro</li>
+                </ul>
+            </fieldset>
+        </footer>
+    </section>
+    <script src="./script-interface.js"></script>
+</body>
+</html> 
