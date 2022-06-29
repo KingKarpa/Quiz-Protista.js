@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Home Page */
+#page-origin, #quiz-questions{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    background-color: #f2d4cc;
+}
+#quiz-questions{
+    display: none;
+}
+#page-origin, #quiz-questions{
+    padding-inline: 0.5em;
+    padding-top: 8vw;
+}
+#page-origin fieldset, #quiz-questions fieldset{
+    border-top: 1px solid black;
+    text-align: center;
+}
+#page-origin legend, #quiz-questions legend{
+    font-size: 1.4em;
+    padding-inline: 0.5em;
+}
+h2{
+    text-align: center;
+    font-size: 1.2em;
+}
+li, p, h3{
+    font-size: 1.2em;
+}
+div ul{
+    list-style-type: square;
+    padding-left: 1.5em;
+    padding-top: 0.4em;
+}
+li{
+    padding-block: 0.2em;
+}
+#start, .check-btn{
+    padding: 0.6em;
+    font-size: 1.3em;
+    font-weight: 600;
+    border: 2px solid black;
+    background-color: #5488d0;
+    margin-top: 4vw;
+}
+
+/* Questions Article */
+#quiz-questions article, .options-square{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+.question-option{
+    padding: 0.45em;
+    font-size: 1.1em;
+    text-align: left;
+    border: 1px solid black;
+    background-color: #f5eed4;
+}
+#quiz-questions article{
+    display: none;
+} 
+#quiz-questions article p{
+    font-weight: 600;
+    border: 1px solid rgb(100, 80, 30);
+    padding: 0.5em;
+    background-color: #dfc8c3;
+}
+.div-timer{
+    text-align: center;
+    align-self: center;
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-radius: 1em;
+    background-color: antiquewhite;
+    width: 40%;
+    padding: 0.4em;
+}
+
+/* Game Over screen */
+#gameOver{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: whitesmoke;
+    padding-inline: 1em;
+    gap: 2em;
+    text-align: center;
+    padding-top: 3.5vh;
+}
+#gO-title{
+    font-size: 1.5em;
+    border-top: 2px solid white;
+}
+#gO-title legend{
+    padding: 0.6em;
+}
+#score{
+    font-weight: 600;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+footer legend{
+    font-size: 1.2em;
+    border: 2px solid white;
+    padding: 0.4em;
+    border-radius: 1em;
+}
+footer fieldset{
+    width: 85%;
+    align-self: center;
+    border: 1px solid white;
+    border-radius: 1em;
+}
+footer ul{
+    margin-block: 1em;
+}
+
+/* Desktop Display / Laptop Display */
+@media screen and (min-width: 768px) {
+
+    /* Origin Media Display */
+    #page-origin, #quiz-questions{
+        gap: 2em;
+    }
+    #page-origin, #quiz-questions{
+        padding: 0.5em;
+        padding-top: 3.5vw;
+    }
+    main p, #guide{
+        margin-left: 2.5em;
+    }
+    #start, .check-btn{
+        margin-top: 2vw;
+        align-self: center;
+        width: 40%;
+        cursor: pointer;
+    }
+
+    /* Questions Media Display */
+    #quiz-questions article, .options-square{
+        gap: 1em;
+    }
+    #quiz-questions article p{
+        width: 95%;
+        align-self: center;
+        padding: 0.8em;
+        margin-bottom: 1.2em;
+    }
+    .question-option{
+        padding: 0.9em;
+        width: 80%;
+        align-self: center;
+        cursor: pointer;
+    }
+    .div-timer{
+        width: 15%;
+        align-self: center;
+    }
+
+    /* Game Over Media Display */
+    #gameOver{
+        padding-top: 3vw;
+    }
+    footer{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    footer legend{
+        padding: 0.5em;
+    }
+    footer fieldset{
+        width: 35%;
+        align-self: center;
+    }
+}
